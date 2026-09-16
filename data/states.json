@@ -1,0 +1,302 @@
+[
+  {
+    "id": "AL",
+    "name": "Alabama",
+    "provinces": 10,
+    "fips": "01"
+  },
+  {
+    "id": "AK",
+    "name": "Alaska",
+    "provinces": 10,
+    "fips": "02"
+  },
+  {
+    "id": "AZ",
+    "name": "Arizona",
+    "provinces": 10,
+    "fips": "04"
+  },
+  {
+    "id": "AR",
+    "name": "Arkansas",
+    "provinces": 10,
+    "fips": "05"
+  },
+  {
+    "id": "CA",
+    "name": "California",
+    "provinces": 10,
+    "fips": "06"
+  },
+  {
+    "id": "CO",
+    "name": "Colorado",
+    "provinces": 10,
+    "fips": "08"
+  },
+  {
+    "id": "CT",
+    "name": "Connecticut",
+    "provinces": 10,
+    "fips": "09"
+  },
+  {
+    "id": "DE",
+    "name": "Delaware",
+    "provinces": 10,
+    "fips": "10"
+  },
+  {
+    "id": "FL",
+    "name": "Florida",
+    "provinces": 10,
+    "fips": "12"
+  },
+  {
+    "id": "GA",
+    "name": "Georgia",
+    "provinces": 10,
+    "fips": "13"
+  },
+  {
+    "id": "HI",
+    "name": "Hawaii",
+    "provinces": 10,
+    "fips": "15"
+  },
+  {
+    "id": "ID",
+    "name": "Idaho",
+    "provinces": 10,
+    "fips": "16"
+  },
+  {
+    "id": "IL",
+    "name": "Illinois",
+    "provinces": 10,
+    "fips": "17"
+  },
+  {
+    "id": "IN",
+    "name": "Indiana",
+    "provinces": 10,
+    "fips": "18"
+  },
+  {
+    "id": "IA",
+    "name": "Iowa",
+    "provinces": 10,
+    "fips": "19"
+  },
+  {
+    "id": "KS",
+    "name": "Kansas",
+    "provinces": 10,
+    "fips": "20"
+  },
+  {
+    "id": "KY",
+    "name": "Kentucky",
+    "provinces": 10,
+    "fips": "21"
+  },
+  {
+    "id": "LA",
+    "name": "Louisiana",
+    "provinces": 10,
+    "fips": "22"
+  },
+  {
+    "id": "ME",
+    "name": "Maine",
+    "provinces": 10,
+    "fips": "23"
+  },
+  {
+    "id": "MD",
+    "name": "Maryland",
+    "provinces": 10,
+    "fips": "24"
+  },
+  {
+    "id": "MA",
+    "name": "Massachusetts",
+    "provinces": 10,
+    "fips": "25"
+  },
+  {
+    "id": "MI",
+    "name": "Michigan",
+    "provinces": 10,
+    "fips": "26"
+  },
+  {
+    "id": "MN",
+    "name": "Minnesota",
+    "provinces": 10,
+    "fips": "27"
+  },
+  {
+    "id": "MS",
+    "name": "Mississippi",
+    "provinces": 10,
+    "fips": "28"
+  },
+  {
+    "id": "MO",
+    "name": "Missouri",
+    "provinces": 10,
+    "fips": "29"
+  },
+  {
+    "id": "MT",
+    "name": "Montana",
+    "provinces": 10,
+    "fips": "30"
+  },
+  {
+    "id": "NE",
+    "name": "Nebraska",
+    "provinces": 10,
+    "fips": "31"
+  },
+  {
+    "id": "NV",
+    "name": "Nevada",
+    "provinces": 10,
+    "fips": "32"
+  },
+  {
+    "id": "NH",
+    "name": "New Hampshire",
+    "provinces": 10,
+    "fips": "33"
+  },
+  {
+    "id": "NJ",
+    "name": "New Jersey",
+    "provinces": 10,
+    "fips": "34"
+  },
+  {
+    "id": "NM",
+    "name": "New Mexico",
+    "provinces": 10,
+    "fips": "35"
+  },
+  {
+    "id": "NY",
+    "name": "New York",
+    "provinces": 10,
+    "fips": "36"
+  },
+  {
+    "id": "NC",
+    "name": "North Carolina",
+    "provinces": 10,
+    "fips": "37"
+  },
+  {
+    "id": "ND",
+    "name": "North Dakota",
+    "provinces": 10,
+    "fips": "38"
+  },
+  {
+    "id": "OH",
+    "name": "Ohio",
+    "provinces": 10,
+    "fips": "39"
+  },
+  {
+    "id": "OK",
+    "name": "Oklahoma",
+    "provinces": 10,
+    "fips": "40"
+  },
+  {
+    "id": "OR",
+    "name": "Oregon",
+    "provinces": 10,
+    "fips": "41"
+  },
+  {
+    "id": "PA",
+    "name": "Pennsylvania",
+    "provinces": 10,
+    "fips": "42"
+  },
+  {
+    "id": "RI",
+    "name": "Rhode Island",
+    "provinces": 10,
+    "fips": "44"
+  },
+  {
+    "id": "SC",
+    "name": "South Carolina",
+    "provinces": 10,
+    "fips": "45"
+  },
+  {
+    "id": "SD",
+    "name": "South Dakota",
+    "provinces": 10,
+    "fips": "46"
+  },
+  {
+    "id": "TN",
+    "name": "Tennessee",
+    "provinces": 10,
+    "fips": "47"
+  },
+  {
+    "id": "TX",
+    "name": "Texas",
+    "provinces": 10,
+    "fips": "48"
+  },
+  {
+    "id": "UT",
+    "name": "Utah",
+    "provinces": 10,
+    "fips": "49"
+  },
+  {
+    "id": "VT",
+    "name": "Vermont",
+    "provinces": 10,
+    "fips": "50"
+  },
+  {
+    "id": "VA",
+    "name": "Virginia",
+    "provinces": 10,
+    "fips": "51"
+  },
+  {
+    "id": "WA",
+    "name": "Washington",
+    "provinces": 10,
+    "fips": "53"
+  },
+  {
+    "id": "WV",
+    "name": "West Virginia",
+    "provinces": 10,
+    "fips": "54"
+  },
+  {
+    "id": "WI",
+    "name": "Wisconsin",
+    "provinces": 10,
+    "fips": "55"
+  },
+  {
+    "id": "WY",
+    "name": "Wyoming",
+    "provinces": 10,
+    "fips": "56"
+  }
+]
