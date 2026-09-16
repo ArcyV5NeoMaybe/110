@@ -1,0 +1,345 @@
+[
+  {
+    "name": "New York City",
+    "state": "NY",
+    "lon": -74.006,
+    "lat": 40.7128,
+    "province": "NY_01"
+  },
+  {
+    "name": "Los Angeles",
+    "state": "CA",
+    "lon": -118.2437,
+    "lat": 34.0522,
+    "province": "CA_01"
+  },
+  {
+    "name": "Chicago",
+    "state": "IL",
+    "lon": -87.6298,
+    "lat": 41.8781,
+    "province": "IL_01"
+  },
+  {
+    "name": "Houston",
+    "state": "TX",
+    "lon": -95.3698,
+    "lat": 29.7604,
+    "province": "TX_01"
+  },
+  {
+    "name": "Phoenix",
+    "state": "AZ",
+    "lon": -112.074,
+    "lat": 33.4484,
+    "province": "AZ_01"
+  },
+  {
+    "name": "Philadelphia",
+    "state": "PA",
+    "lon": -75.1652,
+    "lat": 39.9526,
+    "province": "PA_01"
+  },
+  {
+    "name": "San Antonio",
+    "state": "TX",
+    "lon": -98.4936,
+    "lat": 29.4241,
+    "province": "TX_02"
+  },
+  {
+    "name": "San Diego",
+    "state": "CA",
+    "lon": -117.1611,
+    "lat": 32.7157,
+    "province": "CA_02"
+  },
+  {
+    "name": "Dallas",
+    "state": "TX",
+    "lon": -96.797,
+    "lat": 32.7767,
+    "province": "TX_03"
+  },
+  {
+    "name": "San Jose",
+    "state": "CA",
+    "lon": -121.8863,
+    "lat": 37.3382,
+    "province": "CA_03"
+  },
+  {
+    "name": "Austin",
+    "state": "TX",
+    "lon": -97.7431,
+    "lat": 30.2672,
+    "province": "TX_04"
+  },
+  {
+    "name": "Jacksonville",
+    "state": "FL",
+    "lon": -81.6557,
+    "lat": 30.3322,
+    "province": "FL_01"
+  },
+  {
+    "name": "Fort Worth",
+    "state": "TX",
+    "lon": -97.3308,
+    "lat": 32.7555,
+    "province": "TX_05"
+  },
+  {
+    "name": "Columbus",
+    "state": "OH",
+    "lon": -83.0007,
+    "lat": 39.9612,
+    "province": "OH_01"
+  },
+  {
+    "name": "Indianapolis",
+    "state": "IN",
+    "lon": -86.1581,
+    "lat": 39.7684,
+    "province": "IN_01"
+  },
+  {
+    "name": "Charlotte",
+    "state": "NC",
+    "lon": -80.8431,
+    "lat": 35.2271,
+    "province": "NC_01"
+  },
+  {
+    "name": "Seattle",
+    "state": "WA",
+    "lon": -122.3321,
+    "lat": 47.6062,
+    "province": "WA_01"
+  },
+  {
+    "name": "Denver",
+    "state": "CO",
+    "lon": -104.9903,
+    "lat": 39.7392,
+    "province": "CO_01"
+  },
+  {
+    "name": "Boston",
+    "state": "MA",
+    "lon": -71.0589,
+    "lat": 42.3601,
+    "province": "MA_01"
+  },
+  {
+    "name": "Nashville",
+    "state": "TN",
+    "lon": -86.7816,
+    "lat": 36.1627,
+    "province": "TN_01"
+  },
+  {
+    "name": "Detroit",
+    "state": "MI",
+    "lon": -83.0458,
+    "lat": 42.3314,
+    "province": "MI_01"
+  },
+  {
+    "name": "Portland",
+    "state": "OR",
+    "lon": -122.6784,
+    "lat": 45.5152,
+    "province": "OR_01"
+  },
+  {
+    "name": "Las Vegas",
+    "state": "NV",
+    "lon": -115.1398,
+    "lat": 36.1699,
+    "province": "NV_01"
+  },
+  {
+    "name": "Baltimore",
+    "state": "MD",
+    "lon": -76.6122,
+    "lat": 39.2904,
+    "province": "MD_01"
+  },
+  {
+    "name": "Louisville",
+    "state": "KY",
+    "lon": -85.7585,
+    "lat": 38.2527,
+    "province": "KY_01"
+  },
+  {
+    "name": "Milwaukee",
+    "state": "WI",
+    "lon": -87.9065,
+    "lat": 43.0389,
+    "province": "WI_01"
+  },
+  {
+    "name": "Albuquerque",
+    "state": "NM",
+    "lon": -106.6504,
+    "lat": 35.0844,
+    "province": "NM_01"
+  },
+  {
+    "name": "Tucson",
+    "state": "AZ",
+    "lon": -110.9747,
+    "lat": 32.2226,
+    "province": "AZ_02"
+  },
+  {
+    "name": "Fresno",
+    "state": "CA",
+    "lon": -119.7871,
+    "lat": 36.7378,
+    "province": "CA_04"
+  },
+  {
+    "name": "Sacramento",
+    "state": "CA",
+    "lon": -121.4944,
+    "lat": 38.5816,
+    "province": "CA_05"
+  },
+  {
+    "name": "Kansas City",
+    "state": "MO",
+    "lon": -94.5786,
+    "lat": 39.0997,
+    "province": "MO_01"
+  },
+  {
+    "name": "Atlanta",
+    "state": "GA",
+    "lon": -84.388,
+    "lat": 33.749,
+    "province": "GA_01"
+  },
+  {
+    "name": "Miami",
+    "state": "FL",
+    "lon": -80.1918,
+    "lat": 25.7617,
+    "province": "FL_02"
+  },
+  {
+    "name": "New Orleans",
+    "state": "LA",
+    "lon": -90.0715,
+    "lat": 29.9511,
+    "province": "LA_01"
+  },
+  {
+    "name": "Cleveland",
+    "state": "OH",
+    "lon": -81.6944,
+    "lat": 41.4993,
+    "province": "OH_02"
+  },
+  {
+    "name": "Pittsburgh",
+    "state": "PA",
+    "lon": -79.9959,
+    "lat": 40.4406,
+    "province": "PA_02"
+  },
+  {
+    "name": "St. Louis",
+    "state": "MO",
+    "lon": -90.1994,
+    "lat": 38.627,
+    "province": "MO_02"
+  },
+  {
+    "name": "Minneapolis",
+    "state": "MN",
+    "lon": -93.265,
+    "lat": 44.9778,
+    "province": "MN_01"
+  },
+  {
+    "name": "Salt Lake City",
+    "state": "UT",
+    "lon": -111.891,
+    "lat": 40.7608,
+    "province": "UT_01"
+  },
+  {
+    "name": "Oklahoma City",
+    "state": "OK",
+    "lon": -97.5164,
+    "lat": 35.4676,
+    "province": "OK_01"
+  },
+  {
+    "name": "Richmond",
+    "state": "VA",
+    "lon": -77.436,
+    "lat": 37.5407,
+    "province": "VA_01"
+  },
+  {
+    "name": "Omaha",
+    "state": "NE",
+    "lon": -95.9345,
+    "lat": 41.2565,
+    "province": "NE_01"
+  },
+  {
+    "name": "Honolulu",
+    "state": "HI",
+    "lon": -157.8583,
+    "lat": 21.3069,
+    "province": "HI_01"
+  },
+  {
+    "name": "Anchorage",
+    "state": "AK",
+    "lon": -149.9003,
+    "lat": 61.2181,
+    "province": "AK_01"
+  },
+  {
+    "name": "Boise",
+    "state": "ID",
+    "lon": -116.2023,
+    "lat": 43.615,
+    "province": "ID_01"
+  },
+  {
+    "name": "Raleigh",
+    "state": "NC",
+    "lon": -78.6382,
+    "lat": 35.7796,
+    "province": "NC_02"
+  },
+  {
+    "name": "Tampa",
+    "state": "FL",
+    "lon": -82.4572,
+    "lat": 27.9506,
+    "province": "FL_03"
+  },
+  {
+    "name": "Cincinnati",
+    "state": "OH",
+    "lon": -84.512,
+    "lat": 39.1031,
+    "province": "OH_03"
+  },
+  {
+    "name": "Memphis",
+    "state": "TN",
+    "lon": -90.049,
+    "lat": 35.1495,
+    "province": "TN_02"
+  }
+]
