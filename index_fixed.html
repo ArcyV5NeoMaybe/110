@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Millennium Dawn at Home</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#111820;color:#e8edf2;font-family:Arial,sans-serif;overflow-x:hidden}
+.top{height:68px;background:#18212b;border-bottom:1px solid #344352;display:flex;align-items:center;justify-content:space-between;padding:0 18px}
+.title{font-weight:700;font-size:19px;letter-spacing:.3px}
+.date{font-size:14px;color:#c9d2dc}
+.flag-button{position:fixed;left:16px;top:82px;width:300px;aspect-ratio:1.9/1;padding:0;border:1px solid #596b7d;border-radius:5px;cursor:pointer;overflow:hidden;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.45);z-index:30}
+.flag-button img{display:block;width:100%;height:100%;object-fit:fill}
+.panel{position:fixed;left:16px;top:250px;width:300px;max-width:calc(100vw - 32px);max-height:calc(100vh - 265px);overflow-y:auto;background:#19232d;border:1px solid #3e4d5b;border-radius:5px;box-shadow:0 10px 30px rgba(0,0,0,.55);padding:12px;z-index:29;display:none}
+.panel.open{display:block}
+.panel-title{font-size:13px;color:#aebbc8;padding:5px 4px 10px;border-bottom:1px solid #354452;margin-bottom:10px}
+.president{border:1px solid #40505f;background:#151e27;overflow:hidden;border-radius:4px;margin-bottom:12px}
+.president img{display:block;width:100%;height:260px;object-fit:cover;object-position:center top;background:#28333e}
+.president-name{padding:10px 12px 5px;font-weight:700;font-size:16px;border-top:1px solid #40505f}
+.president-role{padding:0 12px 12px;color:#aebbc8;font-size:12px}
+.option{width:100%;background:#222d38;color:#e8edf2;border:1px solid #40505f;padding:11px 12px;margin-bottom:7px;text-align:left;border-radius:4px;cursor:pointer;font-size:14px}
+.option:hover{background:#2d3a47}
+.main{min-height:calc(100vh - 68px);padding:70px 24px 24px;display:flex;align-items:flex-start;justify-content:center}
+.start{margin-top:18vh;text-align:center;color:#9eabb8}
+.start .country{font-size:28px;color:#e8edf2;font-weight:700}
+.start .hint{margin-top:10px;font-size:14px}
+.flag-button:active{transform:scale(.98)}
+@media(max-width:650px){
+.title{font-size:15px}
+.date{font-size:11px}
+.flag-button{width:calc(100vw - 24px);left:12px;top:80px}
+.panel{left:12px;top:calc(80px + (100vw - 24px)/1.9 + 12px);width:calc(100vw - 24px);max-width:calc(100vw - 24px);max-height:calc(100vh - 100px)}
+.president img{height:230px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+<div class="title">MILLENNIUM DAWN AT HOME</div>
+<div class="date" id="date">01 January 2000 — 00:00</div>
+</header>
+
+<button class="flag-button" id="flagButton" aria-label="United States options">
+<img src="c.png" alt="United States flag">
+</button>
+
+<div class="panel" id="panel">
+<div class="panel-title">UNITED STATES</div>
+
+<div class="president">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bill_Clinton.jpg" alt="William Jefferson Clinton">
+<div class="president-name">William Jefferson Clinton</div>
+<div class="president-role">President of the United States</div>
+</div>
+
+<button class="option">Dashboard</button>
+<button class="option">Economy</button>
+<button class="option">Military</button>
+<button class="option">Politics</button>
+<button class="option">Diplomacy</button>
+<button class="option">Technology</button>
+<button class="option">Decisions</button>
+</div>
+
+<main class="main">
+<section class="start">
+<div class="country">United States</div>
+<div class="hint">Click the flag to open country options</div>
+</section>
+</main>
+
+<script>
+const gameDate=new Date(2000,0,1,0,0,0);
+let last=performance.now();
+const dateEl=document.getElementById("date");
+const flagButton=document.getElementById("flagButton");
+const panel=document.getElementById("panel");
+const months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function render(){
+const day=String(gameDate.getDate()).padStart(2,"0");
+const hour=String(gameDate.getHours()).padStart(2,"0");
+const minute=String(gameDate.getMinutes()).padStart(2,"0");
+const month=months[gameDate.getMonth()];
+const year=gameDate.getFullYear();
+dateEl.textContent=`${day} ${month} ${year} — ${hour}:${minute}`;
+}
+
+function gameLoop(now){
+const realSeconds=(now-last)/1000;
+last=now;
+gameDate.setTime(gameDate.getTime()+realSeconds*2*60*60*1000);
+render();
+requestAnimationFrame(gameLoop);
+}
+
+flagButton.addEventListener("click",function(){
+panel.classList.toggle("open");
+});
+
+render();
+requestAnimationFrame(gameLoop);
+</script>
+</body>
+</html>
