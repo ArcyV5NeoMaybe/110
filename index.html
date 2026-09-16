@@ -6,223 +6,234 @@
 <title>Millennium Dawn at Home</title>
 
 <style>
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
-body{
-    margin:0;
-    background:#111820;
-    color:#e8edf2;
-    font-family:Arial,sans-serif;
-    overflow-x:hidden;
+body {
+    margin: 0;
+    background: #0d151e;
+    color: #e9eef4;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
-.top{
-    height:68px;
-    background:#18212b;
-    border-bottom:1px solid #344352;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 18px;
+.top {
+    height: 88px;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #16212d;
+    border-bottom: 2px solid #243343;
 }
 
-.title{
-    font-weight:700;
-    font-size:19px;
-    letter-spacing:.3px;
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-.date{
-    font-size:14px;
-    color:#c9d2dc;
+.date {
+    font-size: 18px;
+    color: #9fb1c4;
 }
 
-.flag-button{
-    position:fixed;
-    left:16px;
-    top:82px;
-    width:110px;
-    height:74px;
-    padding:0;
-    border:1px solid #596b7d;
-    border-radius:4px;
-    cursor:pointer;
-    overflow:hidden;
-    background:white;
-    box-shadow:0 4px 12px rgba(0,0,0,.45);
-    z-index:30;
+.flag-button {
+    position: relative;
+    margin: 24px 0 0 26px;
+    width: min(470px, calc(100vw - 52px));
+    aspect-ratio: 1.9 / 1;
+    border: 1px solid #40546a;
+    border-radius: 9px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
 }
 
-.flag-stripes{
-    position:absolute;
-    inset:0;
-    background:repeating-linear-gradient(
+.flag-stripes {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
         to bottom,
-        #b22234 0px,
-        #b22234 5.69%,
-        #ffffff 5.69%,
-        #ffffff 11.38%
+        #b22234 0%,
+        #b22234 7.69%,
+        #ffffff 7.69%,
+        #ffffff 15.38%
     );
 }
 
-.flag-canton{
-    position:absolute;
-    left:0;
-    top:0;
-    width:40%;
-    height:53.85%;
-    background:#3c3b6e;
-    overflow:hidden;
+.flag-canton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 53.85%;
+    background: #3c3b6e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px 7px;
 }
 
-.flag-stars{
-    position:absolute;
-    left:4px;
-    top:3px;
-    width:38px;
-    height:34px;
-    display:grid;
-    grid-template-columns:repeat(10,1fr);
-    grid-template-rows:repeat(5,1fr);
-    align-items:center;
-    justify-items:center;
-    color:white;
-    font-size:5px;
-    line-height:1;
+.star-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.main{
-    min-height:calc(100vh - 68px);
-    padding:70px 24px 24px 24px;
-    display:flex;
-    align-items:flex-start;
-    justify-content:center;
+.star {
+    color: white;
+    font-size: clamp(8px, 1.8vw, 16px);
+    line-height: 1;
 }
 
-.start{
-    margin-top:18vh;
-    text-align:center;
-    color:#9eabb8;
+.country-panel {
+    width: min(520px, calc(100vw - 50px));
+    margin: 0 0 30px 25px;
+    padding: 0 20px 20px;
+    background: #17232f;
+    border: 1px solid #33475b;
+    border-radius: 0 0 9px 9px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.25);
 }
 
-.start .country{
-    font-size:28px;
-    color:#e8edf2;
-    font-weight:700;
+.president-card {
+    margin-top: 14px;
+    overflow: hidden;
+    border: 1px solid #33475b;
+    border-radius: 9px;
+    background: #111c27;
 }
 
-.start .hint{
-    margin-top:10px;
-    font-size:14px;
+.president-image {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    object-position: center top;
+    background: #101820;
 }
 
-.panel{
-    position:fixed;
-    left:16px;
-    top:166px;
-    width:300px;
-    max-width:calc(100vw - 32px);
-    background:#19232d;
-    border:1px solid #3e4d5b;
-    border-radius:5px;
-    box-shadow:0 10px 30px rgba(0,0,0,.55);
-    padding:12px;
-    z-index:29;
-    display:none;
+.president-info {
+    padding: 18px 18px 20px;
 }
 
-.panel.open{
-    display:block;
+.president-name {
+    font-size: 25px;
+    font-weight: 700;
 }
 
-.panel-title{
-    font-size:13px;
-    color:#aebbc8;
-    padding:5px 4px 10px;
-    border-bottom:1px solid #354452;
-    margin-bottom:10px;
+.president-role {
+    margin-top: 6px;
+    font-size: 17px;
+    color: #aab8c7;
 }
 
-.option{
-    width:100%;
-    background:#222d38;
-    color:#e8edf2;
-    border:1px solid #40505f;
-    padding:11px 12px;
-    margin-bottom:7px;
-    text-align:left;
-    border-radius:4px;
-    cursor:pointer;
-    font-size:14px;
+.country-title {
+    margin: 30px 0 14px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #40566b;
+    font-size: 23px;
+    color: #b6c5d4;
 }
 
-.option:hover{
-    background:#2d3a47;
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.president{
-    margin-top:12px;
-    border:1px solid #40505f;
-    background:#151e27;
-    overflow:hidden;
-    border-radius:4px;
+.menu-button {
+    width: 100%;
+    min-height: 64px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #35495c;
+    border-radius: 8px;
+    background: #202d3a;
+    color: #edf2f7;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .15s;
 }
 
-.president img{
-    display:block;
-    width:100%;
-    height:260px;
-    object-fit:cover;
-    object-position:center top;
-    background:#28333e;
+.menu-button:hover {
+    background: #293847;
+    border-color: #526a80;
 }
 
-.president-name{
-    padding:10px 12px 5px;
-    font-weight:700;
-    font-size:16px;
-    border-top:1px solid #40505f;
+.menu-button:active {
+    transform: scale(.99);
 }
 
-.president-role{
-    padding:0 12px 12px;
-    color:#aebbc8;
-    font-size:12px;
+.menu-arrow {
+    font-size: 25px;
+    color: #a9bfd3;
 }
 
-@media(max-width:650px){
+.main {
+    position: absolute;
+    left: 58%;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
 
-    .title{
-        font-size:15px;
+.main h1 {
+    margin: 0;
+    font-size: clamp(34px, 5vw, 58px);
+}
+
+.main p {
+    margin-top: 20px;
+    color: #94a8bb;
+    font-size: clamp(16px, 2vw, 23px);
+}
+
+@media (max-width: 800px) {
+    .top {
+        height: 75px;
+        padding: 0 18px;
     }
 
-    .date{
-        font-size:11px;
+    .title {
+        font-size: 22px;
     }
 
-    .flag-button{
-        width:100px;
-        height:67px;
-        left:12px;
-        top:80px;
+    .date {
+        display: none;
     }
 
-    .panel{
-        left:12px;
-        top:155px;
-        width:300px;
-        max-width:calc(100vw - 24px);
+    .flag-button {
+        margin-left: 18px;
+        width: calc(100vw - 36px);
     }
 
-    .president img{
-        height:230px;
+    .country-panel {
+        width: calc(100vw - 36px);
+        margin-left: 18px;
+        padding: 0 14px 16px;
     }
-}
 
-.flag-button:active{
-    transform:scale(.97);
+    .president-image {
+        height: 330px;
+    }
+
+    .main {
+        position: static;
+        transform: none;
+        margin: 50px 25px;
+    }
+
+    .menu-button {
+        min-height: 58px;
+        font-size: 18px;
+    }
 }
 </style>
 </head>
@@ -230,216 +241,145 @@ body{
 <body>
 
 <header class="top">
-    <div class="title">
-        MILLENNIUM DAWN AT HOME
-    </div>
-
-    <div class="date" id="date">
-        01 January 2000 — 00:00
-    </div>
+    <div class="title">MILLENNIUM DAWN AT HOME</div>
+    <div class="date" id="gameDate">01 January 2000 — 00:00</div>
 </header>
 
-<button
-    class="flag-button"
-    id="flagButton"
-    aria-label="United States options"
->
+<button class="flag-button" id="flagButton" aria-label="United States">
     <div class="flag-stripes"></div>
-
-    <div class="flag-canton">
-        <div
-            class="flag-stars"
-            id="flagStars"
-        ></div>
-    </div>
+    <div class="flag-canton" id="flagStars"></div>
 </button>
 
-<div class="panel" id="panel">
+<section class="country-panel" id="countryPanel">
 
-    <div class="panel-title">
-        UNITED STATES
-    </div>
-
-    <button class="option">
-        Dashboard
-    </button>
-
-    <button class="option">
-        Economy
-    </button>
-
-    <button class="option">
-        Military
-    </button>
-
-    <button class="option">
-        Politics
-    </button>
-
-    <button class="option">
-        Diplomacy
-    </button>
-
-    <button class="option">
-        Technology
-    </button>
-
-    <button class="option">
-        Decisions
-    </button>
-
-    <div class="president">
-
+    <div class="president-card">
         <img
-            src="https://www.whitehouse.gov/wp-content/uploads/2021/01/42_bill_clinton.jpg"
+            class="president-image"
+            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bill_Clinton.jpg"
             alt="William Jefferson Clinton"
         >
 
-        <div class="president-name">
-            William Jefferson Clinton
+        <div class="president-info">
+            <div class="president-name">William Jefferson Clinton</div>
+            <div class="president-role">President of the United States</div>
         </div>
-
-        <div class="president-role">
-            President of the United States
-        </div>
-
     </div>
 
-</div>
+    <div class="country-title">UNITED STATES</div>
+
+    <div class="menu">
+        <button class="menu-button">
+            <span>Dashboard</span>
+            <span class="menu-arrow">›</span>
+        </button>
+
+        <button class="menu-button">
+            <span>Economy</span>
+            <span class="menu-arrow">›</span>
+        </button>
+
+        <button class="menu-button">
+            <span>Military</span>
+            <span class="menu-arrow">›</span>
+        </button>
+
+        <button class="menu-button">
+            <span>Politics</span>
+            <span class="menu-arrow">›</span>
+        </button>
+
+        <button class="menu-button">
+            <span>Diplomacy</span>
+            <span class="menu-arrow">›</span>
+        </button>
+
+        <button class="menu-button">
+            <span>Technology</span>
+            <span class="menu-arrow">›</span>
+        </button>
+
+        <button class="menu-button">
+            <span>Decisions</span>
+            <span class="menu-arrow">›</span>
+        </button>
+    </div>
+
+</section>
 
 <main class="main">
-
-    <section class="start">
-
-        <div class="country">
-            United States
-        </div>
-
-        <div class="hint">
-            Click the flag to open country options
-        </div>
-
-    </section>
-
+    <h1>United States</h1>
+    <p>Click the flag to open country options</p>
 </main>
 
 <script>
+const flagStars = document.getElementById("flagStars");
 
-const starsContainer =
-    document.getElementById("flagStars");
+for (let row = 0; row < 9; row++) {
+    const rowElement = document.createElement("div");
+    rowElement.className = "star-row";
 
-for(let i = 0; i < 50; i++){
+    const amount = row % 2 === 0 ? 6 : 5;
 
-    const star =
-        document.createElement("span");
+    for (let i = 0; i < amount; i++) {
+        const star = document.createElement("span");
+        star.className = "star";
+        star.textContent = "★";
+        rowElement.appendChild(star);
+    }
 
-    star.textContent = "★";
-
-    starsContainer.appendChild(star);
+    flagStars.appendChild(rowElement);
 }
 
-let gameDate =
-    new Date(2000,0,1,0,0,0);
+const flagButton = document.getElementById("flagButton");
+const countryPanel = document.getElementById("countryPanel");
 
-let running = false;
+flagButton.addEventListener("click", () => {
+    countryPanel.hidden = !countryPanel.hidden;
+});
 
-let speed = 1;
+countryPanel.hidden = false;
 
-let last =
-    performance.now();
+let gameDate = new Date(2000, 0, 1, 0, 0, 0);
+let lastTime = performance.now();
 
-const dateEl =
-    document.getElementById("date");
+function updateDate() {
+    const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ];
 
-const flagButton =
-    document.getElementById("flagButton");
+    const day = String(gameDate.getDate()).padStart(2, "0");
+    const month = months[gameDate.getMonth()];
+    const year = gameDate.getFullYear();
+    const hour = String(gameDate.getHours()).padStart(2, "0");
+    const minute = String(gameDate.getMinutes()).padStart(2, "0");
 
-const panel =
-    document.getElementById("panel");
-
-const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-];
-
-function render(){
-
-    const day =
-        String(
-            gameDate.getDate()
-        ).padStart(2,"0");
-
-    const hour =
-        String(
-            gameDate.getHours()
-        ).padStart(2,"0");
-
-    const minute =
-        String(
-            gameDate.getMinutes()
-        ).padStart(2,"0");
-
-    const month =
-        months[
-            gameDate.getMonth()
-        ];
-
-    const year =
-        gameDate.getFullYear();
-
-    dateEl.textContent =
+    document.getElementById("gameDate").textContent =
         `${day} ${month} ${year} — ${hour}:${minute}`;
 }
 
-function gameLoop(now){
+function gameLoop(currentTime) {
+    const delta = (currentTime - lastTime) / 1000;
+    lastTime = currentTime;
 
-    const realSeconds =
-        (now - last) / 1000;
+    gameDate = new Date(gameDate.getTime() + delta * 2 * 60 * 60 * 1000);
 
-    last = now;
-
-    if(running){
-
-        gameDate.setTime(
-            gameDate.getTime()
-            +
-            realSeconds *
-            2 *
-            60 *
-            60 *
-            1000 *
-            speed
-        );
-
-        render();
-    }
-
+    updateDate();
     requestAnimationFrame(gameLoop);
 }
 
-flagButton.addEventListener(
-    "click",
-    function(){
-
-        panel.classList.toggle("open");
-
-    }
-);
-
-render();
-
+updateDate();
 requestAnimationFrame(gameLoop);
-
 </script>
 
 </body>
